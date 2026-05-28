@@ -31,7 +31,7 @@ public class SecurityConfig {
                 org.springframework.web.cors.CorsConfiguration corsConfig =
                         new org.springframework.web.cors.CorsConfiguration();
 
-                corsConfig.addAllowedOrigin("http://localhost:3000");
+                corsConfig.addAllowedOriginPattern("*");  // Allow all origins (Netlify, localhost, etc.)
                 corsConfig.addAllowedMethod("*");
                 corsConfig.addAllowedHeader("*");
 
